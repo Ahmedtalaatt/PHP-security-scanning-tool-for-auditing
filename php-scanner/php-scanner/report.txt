@@ -1,0 +1,10 @@
+SCAN REPORT
+
+[Cryptographic Failure] C:\Users\ahmed\Downloads\vulnerable_test.php:15 (A02 Cryptographic Failures)
+    Code: $passwordHash = md5($password);
+    Fix : Use password_hash() / password_verify() for passwords; avoid MD5 and SHA-1.
+
+=== SUMMARY ===
+Files scanned: 1
+Total findings: 1
+  Cryptographic Failure: 1
